@@ -1,0 +1,22 @@
+.buttonRegis{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 50px;
+    
+
+}
+
+.register div{
+    margin:auto;
+    width: 60%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+.register input{
+    border-color: firebrick;
+}

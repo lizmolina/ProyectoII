@@ -1,0 +1,50 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" routerLink="/home" routerLinkActive="active-link">TimeTracking</a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active"aria-current="page" routerLink="/project">Project</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+     <!--<form class="form-inline my-2 my-lg-0">
+      <div  *ngIf="isUserAuthenticated()">
+        <button class="btn btn-outline-black my-2 my-sm-0" >Logout</button>
+      </div>
+    </form>-->
+    
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<br>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

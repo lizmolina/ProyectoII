@@ -1,0 +1,54 @@
+<div class="register bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+    <div class="-mx-3 md:flex mb-6">
+      <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+        <h2 class="title text-center text-4xl text-indigo-900 font-display font-semibold lg:text-left xl:text-5xl
+        xl:text-bold">Create an Account</h2>
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
+          First Name
+        </label>
+        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3" id="grid-first-name" type="text" placeholder="Name" name="name" [(ngModel)]="name" required>
+        
+      </div>
+      <div class="md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
+          Last Name
+        </label>
+        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="text" placeholder="Last Name" name="lastName" [(ngModel)]="lastName">
+      </div>
+      <div class="md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-phone">
+          Phone
+        </label>
+        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-phone" type="text" placeholder="Phone" name="phone" [(ngModel)]="phone" required>
+      </div>
+      
+      <div class="md:w-1/2 px-3">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-email">
+          Email
+        </label>
+        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-email" type="email" placeholder="Email" name="email" [(ngModel)]="email" required>
+      </div>
+     
+    </div>
+    <div class="-mx-3 md:flex mb-6">
+      <div class="md:w-full px-3">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-password">
+          Password
+        </label>
+        <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3" id="grid-password" type="password" placeholder="Enter A Password" name="password" [(ngModel)]="password" required>
+      </div>
+    </div>
+    <div class="buttonRegis mt-10">
+        <button (click)="onSubmit()" class="bg-indigo-500 text-gray-100 p-4 w-full rounded-full tracking-wide
+        font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-indigo-400
+        shadow-lg">
+            Create Account
+        </button>
+    </div>
+
+    <div class="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
+        Have an account ? <a href="http://localhost:4200/login" class="cursor-pointer text-indigo-600 hover:text-indigo-800">Log In</a>
+   
+  </div>
+
+</div>
